@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/index.uss?fileID=7433441132597879392&amp;guid=b31146221de3a244595b41f204f1b051&amp;type=3#index" />
+    <ui:VisualElement name="Panel" class="panel" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column;">
+        <ui:Button text="You have failed this city!" display-tooltip-when-elided="true" name="Title" class="header" style="background-color: rgb(0, 0, 0); top: 10px;" />
+        <ui:Button text="You have failed this city!" display-tooltip-when-elided="true" name="Title2" class="header" style="background-color: rgb(34, 34, 34); top: 10px; height: 80px; font-size: 18px;" />
+        <ui:Button text="New Game" display-tooltip-when-elided="true" name="but1" class="panel" style="left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(255, 216, 0, 0.91);" />
+        <ui:Button text="Continue" display-tooltip-when-elided="true" name="but2" class="panel" style="left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(255, 216, 0, 0.91);" />
+        <ui:Button text="Info" display-tooltip-when-elided="true" name="but3" class="panel" style="left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(255, 216, 0, 0.91);" />
+    </ui:VisualElement>
+</ui:UXML>
