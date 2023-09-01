@@ -11,6 +11,8 @@ public class HeroHp : MonoBehaviour
     public int StartHp = 10;
     public int NowHp;
 
+    public looser looserPrefab;
+
     public Image HP;
     public TextMeshProUGUI countHPtxt;
 
@@ -28,7 +30,9 @@ public class HeroHp : MonoBehaviour
         if (NowHp <= 0)
         {
             Debug.Log("Dead");
-           // Destroy(gameObject);
+            //Destroy(gameObject);
+            Time.timeScale = 0f;
+            Instantiate(looserPrefab);
         }
 
         HP.fillAmount = Mathf.Clamp01((float)NowHp / StartHp);

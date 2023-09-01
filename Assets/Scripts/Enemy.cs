@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class a : MonoBehaviour
@@ -16,9 +17,14 @@ public class a : MonoBehaviour
     public int NowHp;
 
     public Image HP;
+    public winWindow winPrefab;
 
     private NavMeshAgent agent;
     private HeroHp player;
+
+   // public Camera cam;
+    public ParticleSystem partsPrefab;
+    public ParticleSystem bosspartsPrefab;
 
     private void Awake()
     {
@@ -52,9 +58,38 @@ public class a : MonoBehaviour
 
         if(NowHp <= 0)
         {
-            Destroy(gameObject);
+            if (SceneManager.GetActiveScene().buildIndex == 2)
+            {
+                var quat = Quaternion.LookRotation(gameObject.transform.up);
+                Instantiate(partsPrefab, transform.position, quat);
+                Destroy(gameObject);
+            }
+
+            //Destroy(gameObject);
+            if (SceneManager.GetActiveScene().buildIndex == 3)
+            {
+                ////wait here
+                ///NavMeshAgent.ResetPath
+                agent.Stop();
+                var quat = Quaternion.LookRotation(gameObject.transform.up);
+                Instantiate(bosspartsPrefab, transform.position, quat);
+                StartCoroutine(waiter());
+                //Destroy(gameObject);
+                /*Instantiate(winPrefab);*/
+            }    
+
         }
 
         HP.fillAmount = Mathf.Clamp01((float)NowHp / StartHp);
     }
+
+    IEnumerator waiter()
+    {
+        yield return new WaitForSeconds(4);
+        //Debug.Log("waited");
+        Destroy(gameObject);
+        Instantiate(winPrefab);
+        yield break;
+    }
+
 }

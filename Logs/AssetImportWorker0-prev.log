@@ -15,7 +15,7 @@ C:/Users/User/Desktop/Unity_project2/theGame/TheGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53521
+62313
 Successfully changed project path to: C:/Users/User/Desktop/Unity_project2/theGame/TheGame
 C:/Users/User/Desktop/Unity_project2/theGame/TheGame
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,9 +49,9 @@ C:/Users/User/Desktop/Unity_project2/theGame/TheGame
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [10436] Host "[IP] 192.168.0.10 [Port] 0 [Flags] 2 [Guid] 381345175 [EditorId] 381345175 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EFG812L) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [22648] Host "[IP] 192.168.0.10 [Port] 0 [Flags] 2 [Guid] 1682437426 [EditorId] 1682437426 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EFG812L) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [10436] Host "[IP] 192.168.0.10 [Port] 0 [Flags] 2 [Guid] 381345175 [EditorId] 381345175 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EFG812L) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22648] Host "[IP] 192.168.0.10 [Port] 0 [Flags] 2 [Guid] 1682437426 [EditorId] 1682437426 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EFG812L) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Setting multithreaded rendering option only supported for iOS, tvOS and Android platforms, Bratwurst provided
 Multithreaded rendering setting removed for platform Bratwurst
@@ -61,3 +61,19 @@ Initialize engine version: 2022.3.2f1 (d74737c6db50)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.2f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/User/Desktop/Unity_project2/theGame/TheGame/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) R4 Graphics (ID=0x98e4)
+    Vendor:   ATI
+    VRAM:     3822 MB
+    Driver:   27.20.20913.2000
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56036
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.033242 seconds.
+- Loaded All Assemblies, in  8.022 seconds

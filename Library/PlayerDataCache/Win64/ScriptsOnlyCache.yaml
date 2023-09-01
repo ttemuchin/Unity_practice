@@ -6,14 +6,30 @@ ScriptsOnlyBuild:
     - AN_HeroController
     - AN_HeroInteractive
     - AN_PlugScript
+    - Book1
+    - Book2
     - Heal
     - Hero
     - HeroHp
+    - PickUpAxe
     - Portal
+    - RaysForHero
+    - Selectable
     - Spawner
+    - Stone
     - Weapon
+    - Zone1
+    - Zone2
+    - Zone3
+    - Zone4
     - a
+    - information
+    - introToBoss
+    - looser
     - menu
+    - winWindow
+    Unity.AI.Navigation.Editor.dll:
+    - Unity.AI.Navigation.Editor.NavMeshAssetManager
     Unity.AI.Navigation.dll:
     - Unity.AI.Navigation.NavMeshModifierVolume
     - Unity.AI.Navigation.NavMeshSurface
@@ -29,7 +45,11 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
     UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
   serializedClasses:
     Unity.TextMeshPro:
@@ -48,14 +68,21 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Style
     - TMPro.VertexGradient
     UnityEngine.CoreModule:
+    - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.Events.PersistentListenerMode
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
     UnityEngine.UIElementsModule:
     - UnityEngine.UIElements.Button/UxmlFactory
     - UnityEngine.UIElements.DynamicAtlasSettings
@@ -71,7 +98,19 @@ ScriptsOnlyBuild:
     - UnityEngine.UIElements.UxmlRootElementFactory
     - UnityEngine.UIElements.VisualElement/UxmlFactory
     - UnityEngine.UIElements.VisualElementAsset
-  methodsToPreserve: []
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: information
+    methodName: close
+  - assembly: Assembly-CSharp
+    fullTypeName: information
+    methodName: close
+  - assembly: Assembly-CSharp
+    fullTypeName: information
+    methodName: close
+  - assembly: Assembly-CSharp
+    fullTypeName: information
+    methodName: close
   sceneClasses:
     Assets/Scenes/Main0.unity:
     - Class: 1
@@ -117,29 +156,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 640}
     - Class: 114
-      Script: {instanceID: 1610}
+      Script: {instanceID: 1530}
     - Class: 114
-      Script: {instanceID: 1624}
+      Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1812}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1892}
+      Script: {instanceID: 1630}
     - Class: 114
-      Script: {instanceID: 2012}
+      Script: {instanceID: 1720}
     - Class: 114
-      Script: {instanceID: 2088}
+      Script: {instanceID: 1764}
     - Class: 114
-      Script: {instanceID: 2094}
+      Script: {instanceID: 1826}
     - Class: 114
-      Script: {instanceID: 2102}
+      Script: {instanceID: 1830}
     - Class: 114
-      Script: {instanceID: 2324}
+      Script: {instanceID: 1914}
     - Class: 114
-      Script: {instanceID: 2332}
+      Script: {instanceID: 1936}
     - Class: 114
-      Script: {instanceID: 2336}
+      Script: {instanceID: 2036}
     - Class: 114
-      Script: {instanceID: 19534}
+      Script: {instanceID: 2114}
+    - Class: 114
+      Script: {instanceID: 2120}
+    - Class: 114
+      Script: {instanceID: 2128}
+    - Class: 114
+      Script: {instanceID: 2136}
+    - Class: 114
+      Script: {instanceID: 2184}
+    - Class: 114
+      Script: {instanceID: 2230}
+    - Class: 114
+      Script: {instanceID: 2262}
+    - Class: 114
+      Script: {instanceID: 2358}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -153,6 +206,14 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Main1.unity:
     - Class: 1
@@ -210,27 +271,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1576}
     - Class: 114
-      Script: {instanceID: 1610}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1648}
+      Script: {instanceID: 1618}
     - Class: 114
-      Script: {instanceID: 1806}
+      Script: {instanceID: 1654}
     - Class: 114
-      Script: {instanceID: 2012}
+      Script: {instanceID: 1722}
     - Class: 114
-      Script: {instanceID: 2088}
+      Script: {instanceID: 1764}
     - Class: 114
-      Script: {instanceID: 2102}
+      Script: {instanceID: 1798}
     - Class: 114
-      Script: {instanceID: 2180}
+      Script: {instanceID: 1820}
     - Class: 114
-      Script: {instanceID: 2324}
+      Script: {instanceID: 1826}
     - Class: 114
-      Script: {instanceID: 2332}
+      Script: {instanceID: 1830}
     - Class: 114
-      Script: {instanceID: 2336}
+      Script: {instanceID: 1866}
     - Class: 114
-      Script: {instanceID: 19534}
+      Script: {instanceID: 1890}
+    - Class: 114
+      Script: {instanceID: 1936}
+    - Class: 114
+      Script: {instanceID: 2036}
+    - Class: 114
+      Script: {instanceID: 2094}
+    - Class: 114
+      Script: {instanceID: 2114}
+    - Class: 114
+      Script: {instanceID: 2128}
+    - Class: 114
+      Script: {instanceID: 2184}
+    - Class: 114
+      Script: {instanceID: 2208}
+    - Class: 114
+      Script: {instanceID: 2230}
+    - Class: 114
+      Script: {instanceID: 2262}
+    - Class: 114
+      Script: {instanceID: 2358}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -248,6 +329,8 @@ ScriptsOnlyBuild:
     - Class: 198
       Script: {instanceID: 0}
     - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -315,33 +398,55 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1582}
     - Class: 114
-      Script: {instanceID: 1610}
+      Script: {instanceID: 1584}
     - Class: 114
-      Script: {instanceID: 1648}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1700}
+      Script: {instanceID: 1618}
     - Class: 114
-      Script: {instanceID: 1752}
+      Script: {instanceID: 1654}
     - Class: 114
-      Script: {instanceID: 1806}
+      Script: {instanceID: 1680}
     - Class: 114
-      Script: {instanceID: 1812}
+      Script: {instanceID: 1704}
     - Class: 114
-      Script: {instanceID: 1832}
+      Script: {instanceID: 1710}
     - Class: 114
-      Script: {instanceID: 1944}
+      Script: {instanceID: 1764}
     - Class: 114
-      Script: {instanceID: 2012}
+      Script: {instanceID: 1820}
     - Class: 114
-      Script: {instanceID: 2088}
+      Script: {instanceID: 1826}
     - Class: 114
-      Script: {instanceID: 2180}
+      Script: {instanceID: 1830}
     - Class: 114
-      Script: {instanceID: 2324}
+      Script: {instanceID: 1848}
     - Class: 114
-      Script: {instanceID: 2332}
+      Script: {instanceID: 1936}
     - Class: 114
-      Script: {instanceID: 2336}
+      Script: {instanceID: 1966}
+    - Class: 114
+      Script: {instanceID: 1978}
+    - Class: 114
+      Script: {instanceID: 2036}
+    - Class: 114
+      Script: {instanceID: 2114}
+    - Class: 114
+      Script: {instanceID: 2128}
+    - Class: 114
+      Script: {instanceID: 2184}
+    - Class: 114
+      Script: {instanceID: 2208}
+    - Class: 114
+      Script: {instanceID: 2230}
+    - Class: 114
+      Script: {instanceID: 2246}
+    - Class: 114
+      Script: {instanceID: 2252}
+    - Class: 114
+      Script: {instanceID: 2262}
+    - Class: 114
+      Script: {instanceID: 2358}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -395,8 +500,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
-    - Class: 59
-      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -432,35 +535,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1582}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1610}
+      Script: {instanceID: 1618}
     - Class: 114
-      Script: {instanceID: 1648}
+      Script: {instanceID: 1704}
     - Class: 114
-      Script: {instanceID: 1700}
+      Script: {instanceID: 1710}
     - Class: 114
-      Script: {instanceID: 1752}
+      Script: {instanceID: 1764}
     - Class: 114
-      Script: {instanceID: 1806}
+      Script: {instanceID: 1826}
     - Class: 114
-      Script: {instanceID: 1812}
+      Script: {instanceID: 1830}
     - Class: 114
-      Script: {instanceID: 1832}
+      Script: {instanceID: 1886}
     - Class: 114
-      Script: {instanceID: 1944}
+      Script: {instanceID: 1936}
     - Class: 114
-      Script: {instanceID: 2012}
+      Script: {instanceID: 1966}
     - Class: 114
-      Script: {instanceID: 2088}
+      Script: {instanceID: 2036}
     - Class: 114
-      Script: {instanceID: 2180}
+      Script: {instanceID: 2114}
     - Class: 114
-      Script: {instanceID: 2324}
+      Script: {instanceID: 2184}
     - Class: 114
-      Script: {instanceID: 2332}
+      Script: {instanceID: 2230}
     - Class: 114
-      Script: {instanceID: 2336}
+      Script: {instanceID: 2252}
+    - Class: 114
+      Script: {instanceID: 2262}
+    - Class: 114
+      Script: {instanceID: 2358}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -538,6 +645,12 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 3096e4eb91aa82c1fc82e79f7c762cdb
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Zone4
+  - hash:
+      serializedVersion: 2
       Hash: cdda205ce1b81f9275e330b32c7eee60
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -556,7 +669,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: b49d108de6032d5fa477b5d2718d8532
+      Hash: f7ad6c4164153d914c65a4751528b1ba
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: HeroHp
@@ -566,6 +679,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: introToBoss
+  - hash:
+      serializedVersion: 2
+      Hash: 7862609d51f3ac411f8da567cb24fc33
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Boss
   - hash:
       serializedVersion: 2
       Hash: dd7365d011fb5975838f523fc9b1668a
@@ -586,6 +711,12 @@ ScriptsOnlyBuild:
     className: AN_DoorKey
   - hash:
       serializedVersion: 2
+      Hash: 3096e4eb91aa82c1fc82e79f7c762cdb
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Zone1
+  - hash:
+      serializedVersion: 2
       Hash: fa7c62595553866a25a1f687b1914fd2
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -604,6 +735,12 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: looser
+  - hash:
+      serializedVersion: 2
       Hash: 1b042120e20389d76c43758c7a37c6f6
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -620,6 +757,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 4000d7ff195b07af9a80eeaaea32f2a8
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Stone
   - hash:
       serializedVersion: 2
       Hash: 41ac98c9880a6f3758ca69dbaa1e7777
@@ -664,6 +807,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 49e74b214c07fa84428eaaeffd767378
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Book1
+  - hash:
+      serializedVersion: 2
       Hash: 6298a10412e94e11ad85ac6148c9dda1
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -682,6 +831,12 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 986b137127570aee08608978584f2c16
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: information
+  - hash:
+      serializedVersion: 2
       Hash: 15146d050d6483434f5274d48058398e
     assemblyName: Unity.AI.Navigation
     namespaceName: Unity.AI.Navigation
@@ -694,10 +849,28 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 5464f6944461ad13eb724fe6d1922ff1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RaysForHero
+  - hash:
+      serializedVersion: 2
       Hash: 747284d692f6c45bae4955ed655ed04c
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: winWindow
+  - hash:
+      serializedVersion: 2
+      Hash: 49e74b214c07fa84428eaaeffd767378
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Book2
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -730,7 +903,7 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
-      Hash: e37603a2b1b2ef04d649e36abc3e7ba9
+      Hash: b0858a6cb12c1b023722ec102f08d316
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: a
@@ -740,6 +913,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 3096e4eb91aa82c1fc82e79f7c762cdb
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Zone3
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -778,7 +957,13 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: aa26031b966120fa4ff20907c1d7c19d
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 244a95fca940e0f98dff2e3069cd63e0
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Weapon
@@ -826,6 +1011,12 @@ ScriptsOnlyBuild:
     className: NavMeshModifier
   - hash:
       serializedVersion: 2
+      Hash: 97ee9b0f4c413a9fa2fc390ce52e9bca
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: menu
+  - hash:
+      serializedVersion: 2
       Hash: a4d905db69ca7f45f45458ae380fb66f
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -862,6 +1053,24 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: 3096e4eb91aa82c1fc82e79f7c762cdb
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Zone2
+  - hash:
+      serializedVersion: 2
+      Hash: a523580f1165ca172cecf6fb998bee7e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PickUpAxe
+  - hash:
+      serializedVersion: 2
+      Hash: 4dee8b1913af533614a2d4d0586fba0d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AN_HeroController
+  - hash:
+      serializedVersion: 2
       Hash: 142264d9d6b0842e37d4aad2e8ff56d0
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -896,23 +1105,10 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Hero
-  - hash:
-      serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: menu
-  - hash:
-      serializedVersion: 2
-      Hash: 4dee8b1913af533614a2d4d0586fba0d
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: AN_HeroController
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main0.unity
   - Assets/Scenes/Main1.unity
   - Assets/Scenes/Main2.unity
   - Assets/Scenes/Main3.unity
-  playerPath: C:/Users/User/Desktop/Unity_project2/theGame/TheGame/Test_build/New
-    Unity Project.exe
+  playerPath: C:/Users/User/Desktop/Unity_project2/build/The Sorcerer's Trap.exe

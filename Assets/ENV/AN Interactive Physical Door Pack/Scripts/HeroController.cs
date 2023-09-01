@@ -49,10 +49,25 @@ public class AN_HeroController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             Debug.Log("Pause");
+            Time.timeScale = 0f;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             Instantiate(pausePrefab);
         }
+        /*        if (Input.GetKeyDown(KeyCode.T) && menuShowed == false)
+                {
+                    Debug.Log("Pause");
+                    Time.timeScale = 0f;
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                    Instantiate(pausePrefab);
+                    menuShowed = true;
+                }
+                if (Input.GetKeyDown(KeyCode.T) && menuShowed == true)
+                {
+                    pausePrefab.Unshow();
+                    menuShowed = false;
+                }*/
     }
 
     void FixedUpdate()
